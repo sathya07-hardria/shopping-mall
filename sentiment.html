@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment Analysis - Buddy Mall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tts.html">Text-to-Speech</a></li>
+      <li><a href="sentiment.html">Sentiment Analysis</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sentiment Analysis Section -->
+  <section id="sentiment-section">
+    <h1>Sentiment Analysis Demo 💙</h1>
+    <p>Type a message below to detect sentiment (Positive, Negative, Neutral).</p>
+    <input type="text" id="sentiment-input" placeholder="Type something">
+    <button onclick="analyzeSentiment(document.getElementById('sentiment-input').value)">Analyze</button>
+    <p id="sentiment-result"></p>
+  </section>
+
+  <!-- Chatbot Widget -->
+  <div id="chatbot-container">
+    <div id="chat-header">Buddy Mall Assistant 💙</div>
+    <div id="chat-messages"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button id="send-btn">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
